@@ -11,20 +11,15 @@
         <section>
             <h1>Iniciar sesión</h1>
             <p class="description">Hola, te damos la bienvenida. Si aún no eres usuario, te invitamos a inscribirte a través del botón de registrarse, una vez ahí complete los datos que se especifican a continuación.</p>
-            <input class="regist" type="submit" value="Regístrese">
+            <div>
+                <a class="registrar" href="FormRegistrarse.html"> Regístrese</a>
+            </div>
+            <!--   <input class="regist" type="submit" value="Regístrese">   --> 
         </section>
         <section>
             <div class="form-container">
                 <form action="">
-                    <input id="nombreInput" type="text" placeholder="Nombre">
-                    <div id="nombreError" class="error-container">
-                       <!-- <img class="icon-error" src="./exclamacion final.jfif" alt=""> 
-                        <p>El campo "Nombre" no puede estar vacío</p> --> 
-                    </div>
-                    
-                    <input id="apellidoInput" type="text" placeholder="Apellido">
-                    <div id="apellidoError" class="error-container"> </div>
-
+                  
                     <input id="mailInput" type="email" placeholder="E-mail">
                     <div id="mailError" class="error-container"> </div>
 
@@ -34,7 +29,9 @@
                     <input id="button" type="submit" value="ingresar">
 
                 </form>
+                <p class="olvido">Si usted olvidó su contraseña, toque aquí <a href="#">restaurar contraseña</a> para cambiarla</p>
                 <p class="terms">Al ingresar a esta aplicación, usted está aceptando todos los <a href="#">terminos y condiciones</a>  de la misma</p>
+                
             </div>
         </section>
         <footer>
