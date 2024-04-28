@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="indigo3.ico">
 </head>
 <body>
     <div class="main-container"> 
@@ -12,9 +13,7 @@
             <h1>Iniciar sesión</h1>
             <p class="description">Hola, te damos la bienvenida. Si aún no eres usuario, te invitamos a inscribirte a través del botón de registrarse, una vez ahí complete los datos que se especifican a continuación.</p>
             <div>
-                <a class="registrar" href="FormRegistrarse.html"> Regístrese</a>
-            </div>
-            <!--   <input class="regist" type="submit" value="Regístrese">   --> 
+            <button><a href="FormRegistrarse.html">Registrese</a></button>
         </section>
         <section>
             <div class="form-container">
@@ -26,11 +25,15 @@
                     <input id="contraseñaInput" type="password" placeholder="Contraseña">
                     <div id="contraseñaError" class="error-container"> </div>
 
-                    <input id="button" type="submit" value="ingresar">
+                   <!--   <input id="button" type="submit" value="ingresar">   --> 
+
+                    <div>
+                        <button><a href="Inicio.html">Ingresar</a></button>
+                    </div>
 
                 </form>
                 <p class="olvido">Si usted olvidó su contraseña, toque aquí <a href="#">restaurar contraseña</a> para cambiarla</p>
-                <p class="terms">Al ingresar a esta aplicación, usted está aceptando todos los <a href="#">terminos y condiciones</a>  de la misma</p>
+                <p class="terms">Al ingresar a esta aplicación, usted está aceptando todos los <a href="terminosYCond.html">terminos y condiciones</a>  de la misma</p>
                 
             </div>
         </section>

@@ -13,6 +13,7 @@ body{
     background-color: lightcoral;
     background-image: url(./foto\ fondo\ 3.jpeg);
     color: black;
+    
 }
 
 .main-container{
@@ -29,22 +30,27 @@ h1{
 }
 
 .description {
-text-align: center;
-margin: 0px 10px 68px;
-}
-.regist {
-    background-color: lightgrey;
-    width: 330px;
-    height: 90px;
-    padding: 22px 75px;
-    border-radius: 10px;
     text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 6px 6px rebeccapurple;
+    margin: 0px 10px 68px;
+}
+
+button {
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: 1px solid rebeccapurple;
+    padding-left: 20px;
+    outline: none;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 .form-container {
     background-color: beige;
+    height: 100%;
     border-radius: 10px;
     padding: 24px;
     box-shadow: 0 6px 0;
@@ -114,6 +120,25 @@ padding: 1 rem;
     background-color: lightcyan;
     padding: 1 rem;
 }
+
+#dniInput{
+    width: 95%;
+    background-color: lightcyan;
+    padding: 1 rem;
+    }
+
+#telefonoInput{
+    width: 95%;
+    background-color: lightcyan;
+    padding: 1 rem;
+    }
+
+#direccionInput{
+    width: 95%;
+    background-color: lightcyan;
+    padding: 1 rem;
+    }
+
 #mailInput{
     width: 95%;
     background-color: lightcyan;
@@ -134,6 +159,13 @@ padding: 1 rem;
     color: lightseagreen;
 }
 
+.form-container2 {
+    background-color: beige;
+    height: 100%;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 6px 0;
+}
 
 /*------------ Computadora? ocelu no sé 
 
