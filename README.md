@@ -17,33 +17,38 @@ El paciente, por otro lado, puede visualizar su turno y en caso de algun imprevi
 ### Regularidad
 CRUD simple: <br>
 1.Pacientes: <br>
-Create: registrar nuevo paciente con su información personal y su historial médico.<br>
-Read: acceder a la información de los pacientes para leer su historial médico, próximos turnos y detalles de contacto.<br>
+Create: registrar nuevo paciente con su información personal (dni, nombre, apellido, mail, telefono, fecha nacimiento, direccion --> calle, altura, piso, depto, etc).<br>
+Read: muestra la información del paciente.<br>
 Update: modificar la información del paciente.<br>
 Delete: eliminar el perfil del paciente en caso de que sea necesario. <br>
 
-2.Turnos: <br>
-Create: programar nuevos turnos para exploraciones médicas y cirugías, asignando fecha, hora y profesional médico. <br>
-Read: visualizar los turnos programados, junto con la información del paciente y el profesional médico asignado. <br>
-Update: modificar detalles de los turnos. <br>
+2.Turnos consulta (solicitado x paciente): <br>
+Create: programar nuevos turnos para consultas médicas, asignando fecha, hora y profesional médico. <br>
+Read: visualizar los turnos programados, junto con el profesional médico asignado, fecha y hora. <br>
+Update: modificar detalles de los turnos (fecha y/o hora). <br>
 Delete: cancelar turnos. <br>
 
-3.Tipo Exploración Médica: <br>
+3.Turnos exploración médica (sacado x el médico): <br>
+Create: programar nuevos turnos para exploraciones médicas, asignando fecha, hora y paciente. <br>
+Read: visualizar los turnos programados, junto con la información del paciente y del médico, fecha y hora. <br>
+Update: modificar detalles de los turnos (fecha y/o hora). <br>
+Delete: cancelar turnos. <br>
+
+4.Tipo Exploración Médica: <br>
 Create: registrar nuevas exploraciones médicas que los profesionales pueden realizar, junto con los detalles específicos de cada una. <br>
 Read: acceder a la lista de exploraciones médicas disponibles. <br>
 Update: modificar los detalles de las exploraciones médicas. <br>
 Delete: eliminar exploraciones médicas que ya no estén en uso o que hayan sido reemplazadas por otras. <br>
 
-4.Especialidad Médica: <br>
-Create: registrar nuevas especialidades médicas. <br>
-Read: acceder a la información sobre una especialidad médica existente. <br>
-Update: modificar información de especialidades, por ejemplo actualizar lista de médicos especialistas asociados. <br>
-Delete: eliminar especialidad médica cuando ya no haya médicos de su respectiva especialidad. <br>
-
+5.Médico: <br>
+Create: registrar nuevo médico con su información personal (número de matrícula, dni, nombre, apellido, mail, telefono, fecha nacimiento, direccion --> calle, altura, piso, depto, etc).<br>
+Read: muestra la información del médico.<br>
+Update: modificar la información del médico.<br>
+Delete: eliminar el perfil del médico en caso de que sea necesario. <br>
 
 CRUD dependiente: <br>
-1.Exploración Médica {depende de} Tipo Exploración Médica <br>
-2.Médico {depende de} Especialidad Médica <br>
+1.CRUD Exploración Médica {depende de} CRUD Tipo Exploración Médica <br>
+2.CRUD Historia Clínica {depende de} CRUD Paciente <br>
 
 
 Listado + detalle: <br>
@@ -64,8 +69,8 @@ CRUD: <br>
 3.Tipo Exploración Médica <br>
 4.Exploración Médica <br>
 5.Médico <br>
-6.Especialidad Médica <br>
-7.Costos <br>
+6.Costos <br>
+7.Obra Social <br>
 
 CUU: <br>
 1.Reservar turno para exploración médica. <br>
