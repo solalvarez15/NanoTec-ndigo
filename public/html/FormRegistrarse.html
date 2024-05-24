@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main-container"> 
+        <section>
+            <h1>Regístrese</h1>
+            <p class="description">Para ser usuario, por favor completar todos los campos que están a continuación:</p>
+            <div>
+                <a class="registrar2" href="FormRegistrarse.html"></a>
+            </div>
+            <!--   <input class="regist" type="submit" value="Regístrese">   --> 
+        </section>
+        <section>
+            <div class="form-container2">
+                <form action="">
+                    <input id="nombreInput" type="text" placeholder="Nombre">
+                    <div id="nombreError" class="error-container">
+                       <!-- <img class="icon-error" src="./exclamacion final.jfif" alt=""> 
+                        <p>El campo "Nombre" no puede estar vacío</p> --> 
+                    </div>
+                    
+                    <input id="apellidoInput" type="text" placeholder="Apellido">
+                    <div id="apellidoError" class="error-container"> </div>
+
+                    <input id="dniInput" type="dni" placeholder="DNI">
+                    <div id="dniError" class="error-container"> </div>
+
+                    <input id="telefonoInput" type="phone" placeholder="Teléfono">
+                    <div id="telefonoError" class="error-container"> </div>
+
+                    <input id="direccionInput" type="text" placeholder="Dirección">
+                    <div id="direccionError" class="error-container"> </div>
+
+                    <input id="mailInput" type="email" placeholder="E-mail">
+                    <div id="mailError" class="error-container"> </div>
+
+                    <input id="contraseñaInput" type="password" placeholder="Contraseña">
+                    <div id="contraseñaError" class="error-container"> </div>
+
+                   <!-- <input id="button2" type="submit" value="Registrarse">  --> 
+                   <div>
+                    <button><a href="#">Registrarse</a></button>
+                </div>
+                    <div>
+                        <button><a href="index.html">Volver a página de inicio</a></button>
+                    </div>
+
+                </form>
+                <p class="terms">Al ingresar a esta aplicación, usted está aceptando todos los <a href="#">terminos y condiciones</a>  de la misma</p>
+            </div>
+        </section>
+        <footer>
+            <p class="attribution">
+                Aplicación creada por índigo tecnologías
+            </p>
+        </footer>
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>
